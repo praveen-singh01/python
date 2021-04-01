@@ -1,0 +1,12 @@
+import pyttsx3
+
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+engine.setProperty('voice',voices[1].id)
+
+engine.say("hello and welcome to python")
+greetings=["hello","hi","hey"]
+wish={"morning":"good morning","night":"good night","care":"you too","bye":"please dont go"}
+silly={"marry":"i have a boyfreind","love":"i love myself","hate":"lmao,look at your face","children":"oh please"}
+
+engine.runAndWait()
