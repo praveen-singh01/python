@@ -1,0 +1,47 @@
+from tkinter import *
+import tkinter as tk
+
+root= tk.Tk()
+root.title("Form" )
+root.geometry("500x500")
+root.configure(bg= "black")
+# root.columnconfigure(0,weight=1)
+Flabel= Label(root,text= "FEEDBACK FORM",font= ("verdana",20))
+Flabel.place(x=150,y=70)
+
+
+#
+# Flabel= Label(root,text= "FEEDBACK FORM",font= ("verdana",20))
+# Flabel.grid()
+# Flabel= Label(root,text= "",font= ("verdana",20))
+# Flabel.grid()
+
+Flabel= Label(root,text= "company",font= ("verdana",14),bg="black",fg="yellow")
+Flabel.place(x=40,y=190)
+centryvar =StringVar()
+centry = tk.Entry(root,textvariable= centryvar,width =30)
+centry.place(x=200,y=190)
+
+Flabel= Label(root,text= "contact number",font= ("verdana",14),fg= "yellow",bg="black")
+Flabel.place(x=40,y=240)
+contactvar =StringVar()
+contact = tk.Entry(root,textvariable= contactvar,width =30)
+contact.place(x=200,y=240)
+
+Tlabel= Label(root,text= "FEEDBACK",font= ("verdana",14),fg= "yellow",bg="black")
+Tlabel.place(x=40,y=290)
+contactvar =StringVar()
+contact = tk.Entry(root,textvariable= contactvar,width =30,)
+contact.place(x=200,y=290)
+
+
+b= tk.Button(root,text = "LOGIN", bg="black" , fg= "yellow",font= ("verdana",18))
+b.place(x=100,y=350)
+
+s= tk.Button(root,text = "SIGNUP", bg="black" , fg= "yellow",font= ("verdana",18))
+s.place(x=250,y=350)
+
+
+
+
+root.mainloop()
